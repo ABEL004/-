@@ -1,0 +1,193 @@
+﻿body{
+    margin:0;
+    padding:0;
+}
+input,button{
+    outline:0;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: #9B1A10;
+    height:34px;
+    line-height: 34px;
+    font-size: 1em;
+    color:#fff;
+    border-radius:5px;
+    text-align: center;
+}
+#login{
+    background:url(../img/login.png) no-repeat;
+}
+#file,#share{
+    background:url(../img/file.png) no-repeat;
+}
+#promote{
+    background:url(../img/promote.png) no-repeat;
+}
+#login,#file,#promote,#share{
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+    position: relative;
+}
+
+@media screen and (min-width: 768px)   {
+    #login,#file,#promote,#share{
+        width:320px;
+        height: 600px;
+        background-size:100% 100%;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+    }
+}
+/*登录页样式*/
+#login_container{
+    position:absolute;
+    bottom:28%;
+    left:6%;
+    width:88%;
+    overflow: hidden;
+}
+#login_form{
+    float:left;
+    width:60%;
+}
+#login_img{
+    float:right;
+    width:35%;
+}
+#modaltoggle{
+    margin-top: 10px;
+}
+#login_input label{
+    float:left;
+    color: #9B1A10;
+    padding-top: 6px;
+    text-align: left;
+}
+.inp{
+    float:right;
+    background: #8C8783;
+    border: none;
+    width:94%;
+    margin-bottom: 5px;
+    text-align:left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder{
+    color:#666;
+}:-moz-placeholder {
+     color:#666;
+ }:-ms-input-placeholder {
+      color:#666;
+  }
+.sub {
+    background: #9B1A10;
+    width: 94%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-left: 6%;
+}
+#login_img img{
+    width:100%;
+    height:160px;
+    border-radius: 5px;
+    cursor:move;
+}
+/*档案样式*/
+#file_img,#share_img{
+    width:38%;
+    height:25%;
+    position:absolute;
+    top:27%;
+    right:5%;
+    /*background:gray;*/
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#file_img img,#share_img img{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+
+}
+#file_form,#share_form{
+    position: absolute;
+    top:45%;
+    left:12%;
+    -webkit-text-size-adjust: none;
+    font-size: 1em;
+    color:#fff;
+    font-weight: bold;
+}
+#file_form>div,#share_form>div{
+    margin-bottom: 0.6em;
+}
+#file_form>div b,#share_form>div b{
+    color:yellow;
+}
+#file_form>div button{
+    padding:0;
+    height:20px;
+    line-height:20px;
+    font-size: 12px;
+    background: #fff;
+    opacity: 1;
+    color:red;
+    font-weight: bold;
+    margin-left:5px;
+    border-radius: 3px;
+}
+#file_btn,#share_btn{
+    position: absolute;
+    bottom:8%;
+    left:8%;
+}
+#file_btn  button,#share_btn button{
+    color:yellow;
+    background:gray;
+    font-size: 1em;
+    cursor: pointer;
+}
+#file_btn  button:first-child{
+    margin-right:20px;
+}
+#promote_container button{
+    color:yellow;
+    background:gray;
+    border-radius: 5px;
+    font-size: 1em;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:10%;
+    width:40%;
+    margin:0
+    auto;
+}
+
+#promote{
+    display:none;
+}
+/*给自己送子弹的人*/
+#file_p{
+    position:absolute;
+    bottom:-12px;
+    background: gray;
+    color:#9B1A10;
+    opacity: 0.8;
+    height:30px;
+    font-size:12px;
+    font-weight:bold;
+    width:100%;
+}
+#file_p span{
+    color:#fff;
+    font-weight: normal;
+}

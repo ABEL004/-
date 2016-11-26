@@ -1,0 +1,30 @@
+.shade {
+    background: #000;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.simg {
+    position: relative;
+    z-index: 9999;
+    top: 5px;
+    width: 100%;
+}
+
+.close {
+    position: fixed;
+    font-size: 28px;
+    color: #fff;
+    z-index: 10000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
